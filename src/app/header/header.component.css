@@ -1,3 +1,32 @@
 .space-button {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+button {
+  margin-right: 5px;
+  background-color: #00cccc; /* Change this to your desired color */
+  border: none;
+  color: white;
+  padding: 2px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0069d9; /* Change this to your desired hover color */
+}
+
+.title {
+  font-size: 2em; /* Set the font size to 3 times the default size */
+  font-weight: bold; /* Make the text bold */
+  text-align: left; /* Center the text horizontally */
+  margin-top: 1.3em; /* Add some space above the text */
+  margin-bottom: 1em; /* Add some space below the text */
+  text-transform: uppercase; /* Convert the text to all uppercase */
+  letter-spacing: 0.1em; /* Add a small amount of space between each letter */
+  color: #333; /* Set the text color to dark gray */
 }

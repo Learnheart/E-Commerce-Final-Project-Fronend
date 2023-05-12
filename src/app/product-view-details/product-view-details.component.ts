@@ -11,6 +11,7 @@ import { ProductService } from '../_services/product.service';
 export class ProductViewDetailsComponent implements OnInit {
   selectedProductIndex = 0;
 
+  alertVisible = false;
   product: Product;
 
   constructor(
@@ -33,8 +34,17 @@ export class ProductViewDetailsComponent implements OnInit {
         console.log(error);
       }
     );
-  }
+    // alert('adding sucessfully!');
 
+    // Add item to cart
+    this.alertVisible = true;
+    setTimeout(() => {
+      this.alertVisible = false;
+    }, 700);
+  }
+  closeAlert() {
+    this.alertVisible = false;
+  }
   changeIndex(index) {
     this.selectedProductIndex = index;
   }
@@ -48,4 +58,7 @@ export class ProductViewDetailsComponent implements OnInit {
       },
     ]);
   }
+}
+function closeAlert() {
+  throw new Error('Function not implemented.');
 }

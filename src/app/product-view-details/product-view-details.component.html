@@ -52,6 +52,14 @@
           >
             Add to Cart
           </button>
+          <!-- alert message when add successful -->
+          <div
+            class="alert"
+            [ngStyle]="{ display: alertVisible ? 'block' : 'none' }"
+          >
+            <span class="close" (click)="closeAlert()">&times;</span>
+            Item added to cart!
+          </div>
         </div>
       </div>
     </div>

@@ -1,12 +1,7 @@
-<mat-toolbar color="primary">
-  <span> Flagship Book </span>
+<mat-toolbar class="navbar-light" style="background-color: #3399ff">
+  <span class="title"> Flagship Book </span>
   <span class="space-button"></span>
-  <button
-    *ngIf="!isLoggedIn()"
-    routerLink="/login"
-    mat-raised-button
-    color="primary"
-  >
+  <button *ngIf="!isLoggedIn()" routerLink="/login" mat-raised-button>
     Login
   </button>
 
@@ -20,47 +15,24 @@
   </button>
 </mat-toolbar>
 
-<mat-toolbar color="primary" *ngIf="isLoggedIn()">
-  <button mat-raised-button color="primary" routerLink="/">Home</button>
-  <button
-    *ngIf="!isAdmin()"
-    mat-raised-button
-    color="primary"
-    routerLink="/cart"
-  >
-    Cart
-  </button>
-  <button
-    *ngIf="!isAdmin()"
-    mat-raised-button
-    color="primary"
-    routerLink="/myOrders"
-  >
+<mat-toolbar
+  class="navbar-light"
+  style="background-color: #3399ff"
+  *ngIf="isLoggedIn()"
+>
+  <button mat-raised-button routerLink="/">Home</button>
+  <button *ngIf="!isAdmin()" mat-raised-button routerLink="/cart">Cart</button>
+  <button *ngIf="!isAdmin()" mat-raised-button routerLink="/myOrders">
     My Orders
   </button>
-  <button
-    *ngIf="isAdmin()"
-    mat-raised-button
-    color="primary"
-    routerLink="/addNewProduct"
-  >
+  <button *ngIf="isAdmin()" mat-raised-button routerLink="/addNewProduct">
     Add new product
   </button>
-  <button
-    *ngIf="isAdmin()"
-    mat-raised-button
-    color="primary"
-    routerLink="/showProductDetails"
-  >
+  <button *ngIf="isAdmin()" mat-raised-button routerLink="/showProductDetails">
     Show product details
   </button>
 
-  <button
-    *ngIf="isAdmin()"
-    mat-raised-button
-    color="primary"
-    routerLink="/orderInformation"
-  >
+  <button *ngIf="isAdmin()" mat-raised-button routerLink="/orderInformation">
     Order Information
   </button>
 </mat-toolbar>

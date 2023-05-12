@@ -17,3 +17,25 @@
   right: 0;
   margin: auto;
 }
+
+.alert {
+  display: none;
+  padding: 20px;
+  background-color: #4caf50;
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.close:hover {
+  background-color: #ddd;
+  color: black;
+}

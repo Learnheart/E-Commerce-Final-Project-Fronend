@@ -1,0 +1,50 @@
+<div class="container mt-5">
+  <div class="card" style="padding: 20px">
+    <h1 id="login-header" color="primary">SIGN IN</h1>
+
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <!-- Outline form field for username-->
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Username</mat-label>
+        <input
+          matInput
+          ngModel
+          name="userName"
+          id="userName"
+          placeholder="Username"
+        />
+        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+        <mat-hint>Username</mat-hint>
+      </mat-form-field>
+
+      <!-- Outline form field for password-->
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input
+          type="password"
+          matInput
+          ngModel
+          name="userPassword"
+          id="userPassword"
+          placeholder="Enter your password"
+        />
+        <mat-hint>Password</mat-hint>
+      </mat-form-field>
+
+      <button class="w-100" type="submit" mat-raised-button color="primary">
+        Login
+      </button>
+    </form>
+  </div>
+  <div class="text-center">
+    <br />
+    <button
+      class="w-20"
+      mat-raised-button
+      type="button"
+      (click)="registerUser()"
+    >
+      Create new account
+    </button>
+  </div>
+</div>

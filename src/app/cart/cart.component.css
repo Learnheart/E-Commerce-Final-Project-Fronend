@@ -1,0 +1,18 @@
+table {
+  width: 100%;
+}
+
+table td {
+  padding: 30px;
+}
+.mat-col-Description {
+  width: 30% !important;
+}
+
+.mat-col-Price {
+  text-align: center;
+}
+
+.mat-header-cell {
+  padding-left: 35px !important;
+}

@@ -1,6 +1,10 @@
 <div class="container mt-5" style="background-color: #fff">
   <!-- Search bar -->
-  <mat-form-field appearance="outline" class="w-100">
+  <mat-form-field appearance="outline" class="w-100 mt-2">
+    <!-- <mat-icon>search</mat-icon> -->
+    <!-- <button mat-button type="submit" class="search-icon-container">
+      <mat-icon>search</mat-icon>
+    </button> -->
     <mat-label>Search product</mat-label>
     <input
       matInput
@@ -10,7 +14,7 @@
       id="searchKey"
       placeholder="Search product"
     />
-    <mat-hint>Search product</mat-hint>
+    <!-- <mat-hint>Search product</mat-hint> -->
   </mat-form-field>
 
   <mat-grid-list cols="4" rowHeight="2:3" gutterSize="10">
@@ -77,4 +81,24 @@
   </div>
 
   <div class="mt-5"></div>
+</div>
+<!-- Footer -->
+<div id="footer">
+  <div class="social-list">
+    <a href=""><mat-icon>perm_phone_msg</mat-icon>: 0923083292</a>
+    <a href=""><mat-icon> email</mat-icon>: flagshipbook1@gmail.com</a>
+    <a href=""><mat-icon> place</mat-icon>: Hanoi, Vietnam</a>
+  </div>
+  <div class="social-media">
+    <a href="https://www.facebook.com/"><i class="ti-facebook"></i></a>
+    <a href="https://www.instagram.com/"><i class="ti-instagram"></i></a>
+    <a href="https://www.google.com.vn/?hl=vi"><i class="ti-google"></i></a>
+    <a href="https://twitter.com/"><i class="ti-twitter"></i></a>
+    <a href="" (click)="shareLink()"> <mat-icon>share</mat-icon></a>
+    <!-- <div class="share-container" *ngIf="showShare" >
+      <input type="text" placeholder="http://localhost:4200/" />
+      <button (click)="closeShare()">Close</button>
+    </div> -->
+  </div>
+  <p class="footer-description">Powered by <a href="">Flagship Book</a></p>
 </div>

@@ -18,6 +18,10 @@
   margin: auto;
 }
 
+.mat-grid-tile {
+  background: #fff;
+}
+
 .alert {
   display: none;
   padding: 20px;

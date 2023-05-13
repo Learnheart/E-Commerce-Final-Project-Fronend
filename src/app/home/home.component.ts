@@ -70,4 +70,33 @@ export class HomeComponent implements OnInit {
   showProductDetails(productId) {
     this.router.navigate(['/productViewDetails', { productId: productId }]);
   }
+
+  // Function for sharing in footer
+  // showShare = false;
+  // inputValue = '';
+  // shareLink = document.querySelector('.share-container');
+
+  // share(): void {
+  //   this.showShare = true;
+  //   this.shareLink.classList.add('open');
+  //   console.log('Sharing message:', this.inputValue);
+  // }
+  // closeShare() {
+  //   this.shareLink.classList.remove('open');
+  //   this.showShare = false;
+  // }
+
+  shareLink() {
+    const link = 'https://www.example.com';
+
+    const width = 600;
+    const height = 400;
+    const left = screen.width / 2 - width / 2;
+    const top = screen.height / 2 - height / 2;
+    window.open(
+      link,
+      'Share Window',
+      `width=${width}, height=${height}, left=${left}, top=${top}`
+    );
+  }
 }

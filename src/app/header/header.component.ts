@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserAuthService } from '../_services/user-auth.service';
 import { UserService } from '../_services/user.service';
@@ -16,6 +16,21 @@ export class HeaderComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {}
+
+  // Header scroll
+  // isFixed = false;
+
+  // @HostListener('window:scroll')
+  // onWindowScroll() {
+  //   const scrollPosition =
+  //     window.pageYOffset ||
+  //     document.documentElement.scrollTop ||
+  //     document.body.scrollTop ||
+  //     0;
+  //   this.isFixed =
+  //     scrollPosition >=
+  //     64;
+  // }
 
   public isLoggedIn() {
     return this.userAuthService.isLoggedIn();

@@ -1,10 +1,14 @@
+mat-form-field {
+  background-color: aliceblue;
+}
+
 table {
-    width: 100%;
+  width: 100%;
 }
 
 table td {
-    padding: 10px;
+  padding: 10px;
 }
 .mat-col-description {
-    width: 35% !important;
+  width: 35% !important;
 }

@@ -1,3 +1,22 @@
 table {
   width: 100%;
 }
+
+.mat-button-toggle {
+  background-color: #6699ff;
+  color: #fff;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Style the active toggle button */
+.mat-button-toggle-checked {
+  color: #fff;
+}
+
+/* Add some margin between the toggle buttons */
+.mat-button-toggle-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
